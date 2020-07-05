@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Problema</title>
+</head>
+<center>
+	<h1>Colegio San Regio</h1>
+<img src="descarga.jpg">
+<body  bgcolor="#FF0000" >
+<center>
+	<p style="color:#FF0000";>
+<h1>Alta de Alumnos</h1>
+
+<form action="alta.php" method="post">
+Ingrese Nombre:
+<input type="text" name="nombre"><br><br>
+Ingrese Apellido:
+<input type="text" name="apellido"><br><br>
+Ingrese mail:
+<input type="text" name="mail"><br><br>
+Seleccione el curso:
+<select name="idCarrera">
+<option value="1">Sistemas</option>
+<option value="2">Multimedia</option>
+<option value="3">Instalacion</option>
+</select>
+<br>
+<br>
+<input type="submit" value="Registrar">
+</form>
+<form action="FormularioModificar.php" method="post">
+
+Ingrese el mail del alumno a modificar:
+<input type="text" name="mail">
+<input type="submit" value="Buscar/Modificar">
+</form>
+
+<form action="borrar.php" method="post">
+Ingrese el mail del alumno a borrar:
+<input type="text" name="mailbuscar">
+<input type="submit" value="borrar">
+</form>
+
+<form action="listado.php" method="post">
+	Ver Lista de Alumnos..
+<input type="submit" value= "Listado">	
+</form>
+</p>
+
+</body>
+</html>
